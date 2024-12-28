@@ -26,7 +26,37 @@
         class="w-full flex items-center justify-between p-5 sticky md:absolute top-0 left-0 bg-black z-50"
       >
         <img src="/logo.svg" alt="Wecht logo" />
-        <button id="menu-btn">
+        <ul
+          class="md:flex mt-1 items-center hidden w-full gap-10 font-medium px-10"
+        >
+          <li>
+            <a
+              class="hover:text-gray-50 text-gray-200 cursor-pointer"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-50 text-gray-200 cursor-pointer"
+              href="#smartphones"
+              >Produtos</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-50 text-gray-200 cursor-pointer"
+              href="#suporte"
+              >Contato</a
+            >
+          </li>
+        </ul>
+        <button
+          class="text-sm min-w-max bg-white hover:bg-black text-black hover:text-white border border-white rounded-full px-4 py-2 transition-colors duration-300"
+        >
+          <a href="#smartphones">Compre agora</a>
+        </button>
+        <button class="md:hidden" id="menu-btn">
           <img class="w-6" src="/menu.svg" alt="Hambúrger menu" />
         </button>
         <div id="menu" class="hidden min-h-full md:hidden justify-between">
