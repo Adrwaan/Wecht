@@ -24,8 +24,8 @@ A página apresenta:
 
 ### 📱 Captura de Tela - Versão Mobile
 
-![Samsung S22 screenshot](./images/image2.png)
-![Samsung S22 screenshot](./images/image3.png)
+![Samsung S22 screenshot](./images/image2.jpg)
+![Samsung S22 screenshot](./images/image3.jpg)
 
 ---
 
