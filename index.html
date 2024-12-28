@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down,search"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="shortcut icon" href="/small_logo.svg" type="image/x-icon" />
+    <title>Wecht</title>
+  </head>
+  <body
+    class="bg-black font-normal text-white max-w-screen h-max selection:bg-gray-700 overflow-x-hidden"
+  >
+    <div class="w-full min-h-max">
+      <nav
+        class="w-full flex items-center justify-between p-5 sticky md:absolute top-0 left-0 bg-black z-50"
+      >
+        <img src="/logo.svg" alt="Wecht logo" />
+        <button id="menu-btn">
+          <img class="w-6" src="/menu.svg" alt="Hambúrger menu" />
+        </button>
+        <div id="menu" class="hidden min-h-full md:hidden justify-between">
+          <div
+            id="back"
+            class="absolute top-0 left-0 w-screen h-screen bg-black/60 z-10"
+          ></div>
+          <ul
+            class="w-1/2 h-screen absolute top-0 right-0 bg-zinc-950 shadow-xl shadow-zinc-800 z-20 flex flex-col justify-between"
+          >
+            <div
+              class="flex flex-col gap-2 text-gray-400 px-6 py-10 font-medium"
+            >
+              <li class="pb-3">
+                <a href="#home"><img src="/logo.svg" alt="Wecht logo" /></a>
+              </li>
+              <li class="pl-2">
+                <a
+                  class="hover:text-gray-200 cursor-pointer border-b border-b-gray-400 pr-2"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="pl-2">
+                <a
+                  class="hover:text-gray-200 cursor-pointer border-b border-b-gray-400 pr-2"
+                  href="#smartphones"
+                  >Produtos</a
+                >
+              </li>
+              <li class="pl-2">
+                <a
+                  class="hover:text-gray-200 cursor-pointer border-b border-b-gray-400 pr-2"
+                  href="#suporte"
+                  >Contato</a
+                >
+              </li>
+              <li id="back-li" class="pl-2">
+                <span
+                  class="hover:text-gray-200 cursor-pointer border-b border-b-gray-400"
+                >
+                  Voltar
+                </span>
+              </li>
+            </div>
+            <div class="z-20 flex items-center gap-2 text-gray-300 px-6 py-10">
+              <i class="fa-brands fa-facebook text-3xl"></i>
+              <i class="fa-brands fa-instagram text-3xl"></i>
+              <i class="fa-brands fa-linkedin text-3xl"></i>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <header
+        id="home"
+        class="w-full h-72 md:h-screen flex justify-between items-center pr-0 sm:pr-2 pl-6 md:px-10"
+      >
+        <div class="w-1/2 md:w-1/4 flex flex-col gap-4">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-gray-400 text-md">Smartphone Series</h2>
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-light">
+              Design com Beleza e Funcionalidade
+            </h1>
+          </div>
+          <button
+            class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+          >
+            Compre agora
+          </button>
+        </div>
+        <div class="relative w-2/6 sm:w-1/5 md:w-3/12">
+          <img
+            class="min-w-full min-h-full"
+            src="/hero-phone.png"
+            alt="Iphone 16 image"
+          />
+          <div
+            class="min-w-full min-h-full absolute top-0 left-0 bg-gradient-to-t from-black"
+          ></div>
+        </div>
+      </header>
+      <main class="overflow-hidden flex flex-col gap-8">
+        <div
+          class="max-w-full mx-8 py-3 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center gap-1">
+            <p class="text-sm">Filtros</p>
+            <span class="material-symbols-outlined text-white text-xs">
+              keyboard_arrow_down
+            </span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined cursor-pointer">search</span>
+            <button
+              class="text-sm bg-white hover:bg-black text-black hover:text-white border border-white rounded-full px-4 py-2 transition-colors duration-300"
+            >
+              Procurar
+            </button>
+          </div>
+        </div>
+        <div id="smartphones" class="flex flex-col items-center gap-16 my-6">
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">Iphone 16</h3>
+            <img src="/iphone16.png" alt="Iphone 16" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                O novíssimo sistema de câmera  é muito versátil de perto ou de
+                longe. Câmera  de 48 MP
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">Iphone 16</h3>
+            <img src="/iphone16.png" alt="Iphone 16" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                O novíssimo sistema de câmera  é muito versátil de perto ou de
+                longe. Câmera  de 48 MP
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">Iphone 16</h3>
+            <img src="/iphone16.png" alt="Iphone 16" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                O novíssimo sistema de câmera  é muito versátil de perto ou de
+                longe. Câmera  de 48 MP
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+        </div>
+        <div
+          class="max-w-full mx-8 py-3 flex justify-between items-center border-b border-gray-700"
+        >
+          <div class="flex items-center gap-1">
+            <p class="text-sm">Filtros</p>
+            <span class="material-symbols-outlined text-white text-xs">
+              keyboard_arrow_down
+            </span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined cursor-pointer">search</span>
+            <button
+              class="text-sm bg-white hover:bg-black text-black hover:text-white border border-white rounded-full px-4 py-2 transition-colors duration-300"
+            >
+              Procurar
+            </button>
+          </div>
+        </div>
+        <div id="smartwatchs" class="flex flex-col items-center gap-16 my-6">
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">SerieA 3x</h3>
+            <img src="/smart1.png" alt="SerieA 3x" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                A série A3X da Apple combina alto desempenho, eficiência
+                energética e gráficos avançados, ideal para experiências móveis
+                e realidade aumentada.
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">SerieB 2w</h3>
+            <img src="/smart2.png" alt="SerieB 2w" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                O smartwatch série B 2W oferece design elegante, monitoramento
+                de saúde, longa bateria e integração inteligente com
+                dispositivos.
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">Oficial 3xd</h3>
+            <img src="/smart3.png" alt="Oficial 3xd" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                O Oficial 3XD combina durabilidade, alta performance e
+                funcionalidades avançadas, ideal para profissionais que exigem
+                precisão e confiabilidade em qualquer situação.
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+          <section class="w-full h-max flex flex-col items-center gap-3">
+            <h3 class="text-4xl">Apple Watch</h3>
+            <img src="/smart4.png" alt="Apple Watch" />
+            <div class="flex gap-2">
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <img src="/star.svg" alt="Estrela de classificação" />
+              <span class="text-gray-500">(6)</span>
+            </div>
+            <div class="flex gap-2 items-center">
+              <p class="text-md text-green-500">R$ 1899,90 no PIX</p>
+              <span class="text-xs text-gray-500 line-through">2199,90</span>
+            </div>
+            <div class="w-2/3">
+              <p class="text-sm text-center text-gray-400">
+                O Apple Watch oferece design premium, monitoramento avançado de
+                saúde, recursos fitness, conectividade eficiente e integração
+                perfeita com o ecossistema Apple.
+              </p>
+            </div>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-6 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </section>
+        </div>
+        <div
+          id="suporte"
+          class="min-w-full h-max flex flex-col items-center gap-8"
+        >
+          <img class="w-1/2" src="/suporte.png" alt="Suporte" />
+          <div
+            class="w-2/3 p-8 border border-white rounded-xl flex flex-col items-center gap-6"
+          >
+            <h3 class="text-xl">24/7 no suporte ao cliente</h3>
+            <p class="text-xl text-center font-thin">
+              Nosso suporte está 7/7 24horas por dia para te ajudar com qualquer
+              problema em nossos aparelhos
+            </p>
+            <button
+              class="w-max bg-gradient-to-r from-[#1371EF] to-[#E539A2] px-14 py-2 rounded-full text-sm relative transition-opacity duration-700 hover:opacity-75"
+            >
+              Compre agora
+            </button>
+          </div>
+        </div>
+        <div id="encomendas" class="flex flex-col items-center py-8 gap-2">
+          <h2 class="font-medium text-xl">Faça sua encomenda</h2>
+          <p class="text-gray-400 text-center px-6">
+            Se não encontrar o que deseja, encomende conosco e garanta um super
+            desconto!
+          </p>
+          <div
+            class="w-4/5 md:w-3/5 lg:w-2/5 flex flex-col gap-4 bg-gradient-to-b from-[#1371EF] to-[#E539A2] p-8 mt-4 border-t-4 border-t-[#8b5cf6] rounded-lg"
+          >
+            <div class="flex flex-col gap-1">
+              <label for="name">Nome:</label>
+              <input
+                class="rounded-lg bg-transparent border border-white px-3 py-1 placeholder:text-gray-200 text-sm"
+                id="name"
+                type="text"
+                placeholder="Seu nome"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="email">E-mail:</label>
+              <input
+                class="rounded-lg bg-transparent border border-white px-3 py-1 placeholder:text-gray-200 text-sm"
+                id="email"
+                type="email"
+                placeholder="Seu e-mail"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="phone">Celular:</label>
+              <input
+                class="rounded-lg bg-transparent border border-white px-3 py-1 placeholder:text-gray-200 text-sm"
+                id="phone"
+                type="text"
+                placeholder="Seu número de telefone"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="encomenda">O que você quer encomendar?</label>
+              <textarea
+                class="rounded-lg bg-transparent border border-white py-2 px-3 placeholder:text-gray-200 text-sm resize-none h-32"
+                id="encomenda"
+                placeholder="Sua mensagem"
+              ></textarea>
+            </div>
+            <button
+              class="text-sm bg-white hover:bg-[#E539A2] text-black hover:text-white border border-white rounded-lg px-4 py-2 transition-colors duration-300"
+            >
+              Envie sua mensagem
+            </button>
+          </div>
+        </div>
+        <footer class="w-full md:px-10 h-max gap-6 flex flex-col items-center">
+          <img src="/logo.svg" alt="Wecht logo" />
+          <p class="text-base text-center">
+            Rua brás da silva, 281.<br />
+            São paulo, Brasil.
+          </p>
+          <div class="flex flex-col items-center gap-2 text-center">
+            <span class="border-b border-b-white">
+              +55 (11) 4002 - 8922<br />
+            </span>
+            <span class="border-b border-b-white">contato@wecht.com </span>
+          </div>
+          <div class="flex w-full h-max py-10 px-4 justify-between">
+            <ul class="flex flex-col gap-3 text-gray-400">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#smartphones">Smartphones</a></li>
+              <li><a href="#smartwatchs">Smartwatchs</a></li>
+              <li><a href="#suporte">Suporte</a></li>
+              <li><a href="#encomendas">Encomendas</a></li>
+            </ul>
+            <div
+              class="flex w-max min-h-full justify-center items-center gap-2"
+            >
+              <i class="fa-brands fa-facebook text-3xl"></i>
+              <i class="fa-brands fa-instagram text-3xl"></i>
+              <i class="fa-brands fa-linkedin text-3xl"></i>
+            </div>
+            <div class="flex justify-center items-center">
+              <button
+                id="footer-back"
+                class="bg-gradient-to-b from-[#1371EF] to-[#E539A2] size-16 rounded-full"
+              >
+                <i class="fa-solid fa-arrow-up text-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="/src/script.ts" defer></script>
+  </body>
+</html>
