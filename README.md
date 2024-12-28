@@ -20,7 +20,12 @@ A página apresenta:
 
 ### 💻 Captura de Tela - Versão Desktop
 
+![Desktop screenshot](./images/image1.png)
+
 ### 📱 Captura de Tela - Versão Mobile
+
+![Samsung S22 screenshot](./images/image2.png)
+![Samsung S22 screenshot](./images/image3.png)
 
 ---
 
