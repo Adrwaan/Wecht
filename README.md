@@ -24,7 +24,7 @@ A página apresenta:
 
 ### 📱 Captura de Tela - Versão Mobile
 
-<img width="33%" src="./images/image2.jpg">&nbsp;<img width="33%" src="./images/image3.jpg">&nbsp;<img width="33%" src="./images/image4.jpg">
+<img width="30%" src="./images/image2.jpg">&nbsp;<img width="30%" src="./images/image3.jpg">&nbsp;<img width="30%" src="./images/image4.jpg">
 
 ---
 
